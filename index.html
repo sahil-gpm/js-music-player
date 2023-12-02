@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="src/icons/favicon.png" />
+    <title>Musically - Just an approach to learn Javascript</title>
+    <link rel="stylesheet" href="stylesheets/include.css" />
+    <link rel="stylesheet" href="stylesheets/necessities.css" />
+    <link rel="stylesheet" href="stylesheets/animations.css" />
+</head>
+
+<body class="flex items-center h-[100vh] bg-neutral-300">
+    <div class="container w-fit m-auto p-5 rounded-3xl">
+        <div class="navigationBar flex justify-between h-[70px] w-[100%]">
+            <div class="playerName flex justify-center text-white text-3xl righteous cursor-pointer">
+                <span class="appLogo"><img class="h-10" src="src/res/musicalLogo.png" alt="logo" class="logo" /></span>
+                Musically.
+            </div>
+            <div class="playerContent">
+                <ul class="explorer flex items-center text-[0.8rem] text-white gap-5 mt-[0.4rem]">
+                    <li class="links"><a href="">Explore</a></li>
+                    <li class="links"><a href="">About Us</a></li>
+                    <li class="links">
+                        <a href=""><button class="SignIn">Sign In</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="playerMain flex justify-center">
+            <div class="left w-[60%]">
+                <div class="heading righteous text-white text-5xl">
+                    Musically Forever
+                    <div class="description varela text-3xl">
+                        Let music flow in your heart and enrich your soul.
+                    </div>
+                </div>
+                <!-- ======================== -->
+                <div class="songList text-white text-sm varela font-semibold space-y-2 mt-4">
+                    <div class="songNode flex justify-between items-center w-[90%] songBorder">
+                        <span><img src="src/res/covers/song1.jpg" alt="closer"
+                                class="songBanner h-10 rounded-full" /></span>
+                        <span class=" songName w-[260px]">Closer - The Chainsmokers Feat.Halsey</span>
+                        <span class="songDuration">3:56</span>
+                        <span class="playFromHere"><img id="1"
+                                class="p-[1px] bg-[#f67062] h-6 rounded-full cursor-pointer"
+                                src="src/res/play_white.png" alt="play" /></span>
+                    </div>
+                    <div class="songNode flex justify-between items-center w-[90%] songBorder">
+                        <span><img src="src/res/covers/song2.jpg" alt="closer"
+                                class="songBanner h-10 rounded-full" /></span>
+                        <span class="songName w-[260px]">You Broke me first - Tate McRae</span>
+                        <span class="songDuration">4:01</span>
+                        <span class="playFromHere"><img id="2"
+                                class="p-[1px] bg-[#f67062] h-6 rounded-full cursor-pointer"
+                                src="src/res/play_white.png" alt="play" /></span>
+                    </div>
+                    <div class="songNode flex justify-between items-center w-[90%] songBorder">
+                        <span><img src="src/res/covers/song3.jpg" alt="closer"
+                                class="songBanner h-10 rounded-full" /></span>
+                        <span class="songName w-[260px]">Without Me - Halsey</span>
+                        <span class="songDuration">3:37</span>
+                        <span class="playFromHere "><img id="3"
+                                class="p-[1px] bg-[#f67062] h-6 rounded-full cursor-pointer"
+                                src="src/res/play_white.png" alt="play" /></span>
+                    </div>
+                </div>
+            </div>
+            <!-- ======================= -->
+            <div class="right h-fit currentSongBorder p-2">
+                <div>
+                    <img src="src/res/covers/song1.jpg" alt="currentSongBanner" id="currentSongBanner"
+                        class="rotator h-[16rem] rounded-full" />
+                </div>
+            </div>
+            <!-- ===================== -->
+        </div>
+        <div class="separator bg-white h-[0.05rem] w-[65%] m-auto mt-12"></div>
+        <!-- ===================== -->
+        <div class="controls m-auto">
+            <div id="currentSongNameStatus" class=" flex justify-center varela text-white text-2xl righteous mt-6">
+                Closer - The Chainsmokers Feat.Halsey
+            </div>
+            <div class="seekBar flex mt-[0.82rem]">
+                <input id="songHandlingBar" type="range" min="0" max="100" value="0"
+                    class="bar h-[0.30rem] w-[85%] m-auto outline-none" />
+            </div>
+            <div class="songHandling flex justify-center items-center gap-[0.7rem] mt-3">
+                <span><img id="previous" class="h-10 cursor-pointer" src="src/res/prev_white.png"
+                        alt="backwards" /></span>
+                <span><img id="playPause" class="cursor-pointer" src="src/res/play_white.png" alt="play" /></span>
+                <span><img id="next" class="h-10 cursor-pointer" src="src/res/end_white.png" alt="forwards" /></span>
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>

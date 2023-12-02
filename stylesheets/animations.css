@@ -1,0 +1,27 @@
+.rotator {
+    -moz-animation: spin 21s linear infinite;
+    animation: spin 21s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+/* #playPause {
+    transition: 0.8s ease-in-out;
+}
+*/

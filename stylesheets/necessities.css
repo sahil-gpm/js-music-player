@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Archivo+Black&family=Baloo+Bhai+2:wght@400;600&family=Bangers&family=Bebas+Neue&family=Bree+Serif&family=Lato:ital,wght@1,700&family=Mochiy+Pop+P+One&family=Open+Sans:wght@300&family=Raleway:wght@500&family=Righteous&family=Roboto:wght@400;500&family=Staatliches&family=Supermercado+One&family=Ubuntu:wght@300&family=Varela+Round&display=swap');
+
+/* fonts */
+.varela {
+    font-family: "Varela Round", sans-serif;
+}
+
+.archivo {
+    font-family: "Archivo Black", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.righteous {
+    font-family: "Righteous", cursive;
+}
+
+.container {
+    background: linear-gradient(315deg, #fc5296 0%, #f67062 74%);
+    /* background: url('src/res/bg.jpg'); */
+    background-blend-mode: darken;
+    background-size: cover;
+    background-color: #fc5296;
+}
+
+/* fonts  */
+
+/* extras */
+.playerName {
+    padding-left: 6%;
+}
+
+.playerContent {
+    padding-right: 5%;
+}
+
+.songBorder {
+    background: white;
+    color: #f67062;
+    padding: 2px 13px;
+    border-radius: 30px;
+    letter-spacing: 0.05px;
+}
+
+.currentSongBorder {
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+/* extras */
+
+/* handling hovers and changes using some normal css */
+.links {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Varela Round", sans-serif;
+}
+
+.explorer button {
+    color: #f894a4;
+    background-color: white;
+    border-radius: 15px;
+    padding: 7px 12px;
+    transition: 0.05s ease-in-out;
+}
+
+.explorer button:hover {
+    color: white;
+    background: none;
+    border: 2px solid white;
+}
